@@ -1,5 +1,6 @@
 import React from 'react'
-
+import '@material/react-button/dist/button.css';
+import Button from '@material/react-button';
 
 function FormComponent(props){
   return (
@@ -76,7 +77,13 @@ function FormComponent(props){
          </label>
          <br />
 
-      <button type="button" className="button">Submit</ button>
+    <Button
+      raised
+      className='button-alternate'
+      onClick={() => console.log('clicked!')}
+      >
+     Click Me!
+   </Button>
       </form>
       <hr />
       <h2>Entered information:</h2>
