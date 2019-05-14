@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormComponent from "./FormComponent"
+
 class FormContainer extends Component {
     constructor(){
       super()
@@ -11,7 +12,9 @@ class FormContainer extends Component {
         gluten: false,
         seafood: false,
         egg: false,
-        restrictions: []
+        restrictions: [],
+        test: false
+
       }
       this.handleChange = this.handleChange.bind(this)
     }
