@@ -5,8 +5,8 @@ function FormComponent(props){
   return (
     <div className="columns is-centered">
       <div className="column is-narrow">
-    <main className="App box has-background-primary">
-      <h1 className="title is-size-3">Your Reservation</h1>
+    <main className="App box has-background-grey-light">
+      <h1 className="title is-size-3 has-text-white">Your Reservation</h1>
       <form>
         <div className="field">
           <label className="label">First Name</label>
@@ -97,14 +97,28 @@ function FormComponent(props){
        </div>
       </div>
       <div className="has-text-centered">
-        <Button className="is-warning">Submit</Button>
+
       </div>
       </form>
       <br/>
-      <h2>Entered information:</h2>
-      <p>Name: {props.firstName} {props.lastName}</p>
-      <p>Entree: {props.entree}</p>
-      <p>Dietary restrictions:{props.restrictions.toString()}</p>
+      <div className="card">
+        <header className="card-header">
+          <p className="card-header-title">
+            Your Information:
+          </p>
+        </header>
+        <div className="card-content">
+   <div class="content">
+   <p className="has-text-info"><strong>Name:</strong> {props.firstName} {props.lastName}</p>
+   <p className="has-text-info"><strong>Entree:</strong> {props.entree}</p>
+   <p className="has-text-info"><strong>Dietary restrictions:</strong>{props.restrictions.toString()}</p>
+   </div>
+ </div>
+ <footer class="card-footer">
+   <a href="#" class="card-footer-item">Delete</a>
+ </footer>
+</div>
+
 
 
 
