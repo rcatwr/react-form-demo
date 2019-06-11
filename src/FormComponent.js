@@ -50,9 +50,10 @@ function FormComponent(props){
             </div>
           </div>
         </div>
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
+        <div className="field">
+          <h5 className="label">Dietary Restrictions:</h5>
+          <div className="control">
+            <label className="checkbox">
               <input
                   type="checkbox"
                   name="dairy"
